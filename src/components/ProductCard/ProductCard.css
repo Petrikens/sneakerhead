@@ -1,0 +1,36 @@
+.product{
+   display: flex;
+   flex-direction: column;
+}
+.products_text{
+   display: flex;
+   flex-direction: column;
+}
+.product li {
+   width: 315px;
+   height: 446px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+
+.products_text span:first-child {
+   font-size: 24px;
+   line-height: 120%;
+   color: #3a3a3a;
+   margin-bottom: 4px;
+}
+.products_text span:nth-child(2) {
+   font-size: 16px;
+   line-height: 150%;
+   color: #3a3a3a;
+   margin-bottom: 5px;
+}
+.products_text span:last-child {
+   font-size: 20px;
+   line-height: 150%;
+   color: #3a3a3a;
+}
+
+
+

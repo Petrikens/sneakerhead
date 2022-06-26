@@ -1,0 +1,395 @@
+{
+   "data": [
+      {
+         "id": 1,
+         "name": "Air Force 1 '07",
+         "brand": "Nike",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/data/1C-1/384855-05-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "male",
+         "condition": "sale"
+      },
+      {
+         "id": 2,
+         "name": "Air Force 1 High '07",
+         "brand": "Nike",
+         "price": 8000,
+         "url": "https://sneakers.by/image/cache/data/1C-1/381051-09-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "male",
+         "condition": "new"
+      },
+      {
+         "id": 3,
+         "name": "Air University Blue",
+         "brand": "Nike",
+         "price": 17500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/15057/krossovki-puma-cali-dream-383112-02-1-300x300.webp",
+         "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+         ],
+         "gender": "male"
+      },
+      {
+         "id": 4,
+         "name": "574 Core",
+         "brand": "New Balance",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/15055/krossovki-puma-future-rider-twofold-380591-12-1-300x300.webp",
+         "sizes": [
+            "32,5",
+            "34,5",
+            "36,5",
+            "38,5",
+            "40,5",
+            "42,5",
+            "44,5",
+            "46,5"
+         ],
+         "gender": "female"
+      },
+      {
+         "id": 5,
+         "name": "Blazer Mid '77",
+         "brand": "Nike",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/15033/krossovki-lacoste-t-clip-7-40sma0048407-1-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "female",
+         "condition": "sale"
+      },
+      {
+         "id": 6,
+         "name": "8K 2020",
+         "brand": "Adidas",
+         "price": 8000,
+         "url": "https://sneakers.by/image/cache/data/1C-1/CD7782-100-300x300.webp",
+         "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+         ],
+         "gender": "female",
+         "condition": "new"
+      },
+      {
+         "id": 7,
+         "name": "Air Max 95",
+         "brand": "Nike",
+         "price": 7000,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29583/kedy-adidas-vl-court-2-0-fy8812-1-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "male"
+      },
+      {
+         "id": 8,
+         "name": "Air Max Vapor Wing MS",
+         "brand": "Nike",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29582/kedy-adidas-advantage-base-velcro-gx0723-1-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "female"
+      },
+      {
+         "id": 9,
+         "name": "Air Max ZM950",
+         "brand": "Nike",
+         "price": 8500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29580/krossovki-adidas-stella-mccartney-solarglide-gy6095-1-300x300.webp",
+         "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+         ],
+         "gender": "female",
+         "condition": "sale"
+      },
+      {
+         "id": 10,
+         "name": "Air Jordan V Low",
+         "brand": "Nike",
+         "price": 10500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29579/krossovki-adidas-speedmotion-gx0570-1-300x300.webp",
+         "sizes": [
+            "32,5",
+            "34,5",
+            "36,5",
+            "38,5",
+            "40,5",
+            "42,5",
+            "44,5",
+            "46,5"
+         ],
+         "gender": "male",
+         "condition": "new"
+      },
+      {
+         "id": 11,
+         "name": "Streetball",
+         "brand": "Adidas",
+         "price": 9500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29578/krossovki-adidas-strutter-gx0671-1-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "female"
+      },
+      {
+         "id": 12,
+         "name": "Air Max 270 React",
+         "brand": "Nike",
+         "price": 8500,
+         "url": "https://sneakers.by/image/cache/data/1C-1/FX3632-300x300.webp",
+         "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+         ],
+         "gender": "male"
+      },
+      {
+         "id": 13,
+         "name": "Air Max Triax 96 SP",
+         "brand": "Nike",
+         "price": 9000,
+         "url": "https://sneakers.by/image/cache/data/1C-1/GX3256-300x300.webp",
+         "sizes": [
+            "32,5",
+            "34,5",
+            "36,5",
+            "38,5",
+            "40,5",
+            "42,5",
+            "44,5",
+            "46,5"
+         ],
+         "gender": "female",
+         "condition": "sale"
+      },
+      {
+         "id": 14,
+         "name": "Air Max Zephyr",
+         "brand": "Adidas",
+         "price": 11000,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29575/krossovki-adidas-forum-bold-gy8198-1-300x300.webp",
+         "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+         ],
+         "gender": "female",
+         "condition": "new"
+      },
+      {
+         "id": 15,
+         "name": "Superstar",
+         "brand": "Adidas",
+         "price": 4500,
+         "url": "https://sneakers.by/image/cache/data/1C-1/GV7302-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "male"
+      },
+      {
+         "id": 16,
+         "name": "Mens Made in US 993",
+         "brand": "New Balance",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29573/krossovki-adidas-retropy-f2-gw0505-1-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "female"
+      },
+      {
+         "id": 17,
+         "name": "Blazer Low '77",
+         "brand": "Nike",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29572/krossovki-adidas-jeans-gw5753-2-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "female",
+         "condition": "new"
+      },
+      {
+         "id": 18,
+         "name": "Cortez Basic",
+         "brand": "Nike",
+         "price": 8500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29571/krossovki-adidas-ozweego-gw5621-4-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "female",
+         "condition": "sale"
+      },
+      {
+         "id": 19,
+         "name": "PG 4",
+         "brand": "Nike",
+         "price": 7500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29570/kedy-adidas-busenitz-g48060-1-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "male",
+         "condition": "new"
+      },
+      {
+         "id": 20,
+         "name": "Air Max 95 White",
+         "brand": "Nike",
+         "price": 9500,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/29569/krossovki-adidas-ultimashow-fx3640-1-300x300.webp",
+         "sizes": [
+            "31,5",
+            "33,5",
+            "35,5",
+            "37,5",
+            "39,5",
+            "41,5",
+            "43,5",
+            "45,5"
+         ],
+         "gender": "male",
+         "condition": "sale"
+      },
+      {
+         "id": 21,
+         "name": "327",
+         "brand": "New Balance",
+         "price": 12000,
+         "url": "https://sneakers.by/image/cache/catalog/sneakers-pics/15028/kedy-converse-ctas-lift-hi-a01599c-1-300x300.webp",
+         "sizes": [
+            "33",
+            "35",
+            "37",
+            "39",
+            "41",
+            "43",
+            "45",
+            "47"
+         ],
+         "gender": "male",
+         "condition": "new"
+      }
+   ]
+}

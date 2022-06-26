@@ -1,0 +1,88 @@
+.sohpingCartContainer{
+   width: 1320px;
+   margin: 0 auto;
+}
+.chosenProducts{
+   display: flex;
+   flex-direction: column;
+   padding: 20px 0;
+   align-items: center;
+}
+.chosenProduct{
+   margin-bottom: 20px;
+   display: flex;
+}
+.cartImg{
+   margin-right: 20px;
+}
+.cartText{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   margin-right: 50px;
+}
+.cartButtons{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.cartButtons input{
+   width: 145px;
+   height: 75px;
+   text-align: center;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.buyButton{
+   background-color: green;
+   border-radius: 20px;
+}
+.deleteButton{
+   background-color: red;
+   border-radius: 20px;
+}
+h1{
+   display: flex;
+   justify-content: center;
+   font-size: 32px;
+}
+
+@media all and (max-width: 1360px) {
+   .sohpingCartContainer {
+     width: 1024px;
+   }
+ }
+ @media all and (max-width: 1080px) {
+   .sohpingCartContainer {
+     width: 768px;
+   }
+ }
+ @media all and (max-width: 830px) {
+   .sohpingCartContainer {
+     width: 425px;
+   }
+   .chosenProduct{
+      flex-direction: column;
+   }
+   .cartButtons{
+      align-items: center;
+      flex-direction: row;
+   }
+   .cartImg{
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+   .cartText{
+      margin-right: 0;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+   .cartButtons input{
+      width: 130px;
+      height: 60px;
+   }
+   .cartButtons input:first-child{
+      margin-right: 10px;
+   }
+   
+ }

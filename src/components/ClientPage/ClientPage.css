@@ -1,0 +1,11 @@
+.clientPageContainer{
+   width: 1320px;
+   margin: 0 auto;
+}
+
+
+
+.clientLink{
+  color: blue;
+  text-decoration: underline;
+}

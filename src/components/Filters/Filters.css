@@ -1,0 +1,146 @@
+.filter{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 280px;
+}
+.reboot{
+  margin: 10px 0;
+}
+.catalog .container .filter  .filter_inner {
+   padding: 20px 0;
+   border-bottom: 1px solid #dce9e3;
+ }
+ .catalog .container .filter  .filter_inner p {
+   padding-bottom: 20px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   position: relative;
+ }
+
+ .catalog .container .filter  .filter_brand .filter_title {
+   position: relative;
+   cursor: pointer;
+ }
+
+ .catalog .container .filter  .filter_brand ,
+ .catalog .container .filter  .filter_brand ,
+ .catalog .container .filter  .filter_brand ,
+ .catalog .container .filter  .filter_brand  {
+   cursor: pointer;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 17px;
+ }
+ .catalog .container .filter  .filter_brand  input [type=checkbox],
+ .catalog .container .filter  .filter_brand label input [type=checkbox],
+ .catalog .container .filter  .filter_brand label input [type=checkbox],
+ .catalog .container .filter  .filter_brand label input [type=checkbox] {
+   width: 20px;
+   height: 20px;
+ }
+ .catalog .container .filter  .filter_brand :last-child,
+ .catalog .container .filter  .filter_brand label:last-child,
+ .catalog .container .filter  .filter_brand label:last-child,
+ .catalog .container .filter  .filter_brand label:last-child {
+   margin-bottom: 0;
+ }
+ .catalog .container .filter  .filter_brand  span,
+ .catalog .container .filter  .filter_brand label span,
+ .catalog .container .filter  .filter_brand label span,
+ .catalog .container .filter  .filter_brand label span {
+   margin-left: 8px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #0e0f0f;
+   font-weight: 400;
+ }
+ .catalog .container .filter  .filter_price .filter_title {
+   position: relative;
+   cursor: pointer;
+ }
+
+ .catalog .container .filter  .filter_price  {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 17px;
+ }
+ .catalog .container .filter  .filter_price  label:last-child {
+   margin-bottom: 0;
+ }
+ .catalog .container .filter  .filter_price  span {
+   margin-right: 10px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #0e0f0f;
+ }
+ .catalog .container .filter  .filter_price  span:last-child {
+   margin-left: 10px;
+ }
+ .catalog .container .filter  .filter_price  input {
+   font-size: 18px;
+   line-height: 21px;
+   color: #0e0f0f;
+   border: 1px solid #898989;
+   border-radius: 2px;
+   width:65px;
+ }
+ .catalog .container .filter  .filter_price  input[type=checkbox] {
+   width: 20px;
+   height: 20px;
+ }
+ .catalog .container .filter  .filter_size .filter_title {
+   position: relative;
+   cursor: pointer;
+ }
+
+
+ .catalog .container .filter  .filter_size  ul {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   cursor: pointer;
+ }
+ .catalog .container .filter  .filter_size  ul li {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   width: 67px;
+   height: 44px;
+   border: 1px solid #898989;
+   border-radius: 2px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #0e0f0f;
+   margin-bottom: 4px;
+ }
+ 
+ .searchButton{
+    font-size: 18px;
+    line-height: 21px;
+    color: #0e0f0f;
+    border: 1px solid #898989;
+    border-radius: 2px;
+    cursor: pointer;
+ }
+ .active{
+   background-color: #898989;
+ }
+ .normal{
+  background-color: white;
+}
