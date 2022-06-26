@@ -14,6 +14,7 @@ export default function ClientPage() {
          <p>{userName} Добро пожаловать на СНИКЕРХЭД!</p>
          <p>Для просмотра ассортимента пройдите на <Link className="clientLink" to="/">Главную</Link> страницу!</p>
          <button
+            className="logOutButton"
             onClick={() => dispatch(removeUser())}
          ><Link to="/">Выйти из аккаунта {userName}</Link></button>
       </div>
