@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { deleteElementCart, getProductData } from '../../store/productCardSlice';
+import { deleteElementCart } from '../../store/productCardSlice';
 import useAuth from '../../hooks/use-auth'
 import './ShoppingCart.css'
 
