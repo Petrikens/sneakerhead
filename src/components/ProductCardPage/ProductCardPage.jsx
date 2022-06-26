@@ -18,7 +18,7 @@ export default function ProductCardPage() {
    const navigate = useNavigate();
 
    useEffect(() => {
-      fetch(`https://my-json-server.typicode.com/Petrikens/json-server/data/${id}`)
+      fetch(`http://localhost:3001/data/${id}`)
          .then(response => response.json())
          .then(json => {
             setProductData(json);
