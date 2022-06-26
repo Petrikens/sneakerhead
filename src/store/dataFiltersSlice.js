@@ -6,7 +6,7 @@ export const fetchData = createAsyncThunk(
    'dataFilters/fetchData',
    async function (_, { rejectWithValue }) {
       try {
-         const response = await fetch('http://localhost:3001/data');
+         const response = await fetch('https://my-json-server.typicode.com/Petrikens/json-server/data');
          if (!response.ok) {
             throw Error('Server Error!')
          }
