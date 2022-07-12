@@ -7,14 +7,6 @@
    max-width: 500px;
    margin: 0 auto;
  }
- 
- form h1 {
-   font-weight: 100;
-   color: white;
-   text-align: center;
-   padding-bottom: 10px;
-   border-bottom: 1px solid rgb(79, 98, 148);
- }
 
  form input {
    display: block;

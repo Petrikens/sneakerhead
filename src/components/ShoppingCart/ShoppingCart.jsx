@@ -34,21 +34,21 @@ export default function ShoppingCart() {
                         <div className='cartPrice'>Цена: {el.price * el.count}</div>
                      </div>
                      <div className='cartButtons'>
-                        <input type="button" className='buyButton' name='buyButton' defaultValue='Купить'
-                           onClick={() => {
-                              (isAuth)
-                                 ?
-                                 dispatch(deleteElementCart({ id: el.id })) && navigate("../purchase", { replace: true })
-                                 :
-                                 navigate("../registration", { replace: true })
-                           }}
-                        />
                         <input type="button" className='deleteButton' name='deleteButton' defaultValue='Удалить'
                            onClick={() => dispatch(deleteElementCart({ id: el.id }))}
                         />
                      </div>
                   </div>)
                })}
+               <input type="button" className='buyButton' name='buyButton' defaultValue='Оформить заказ'
+                  onClick={() => {
+                     (isAuth)
+                        ?
+                        dispatch(deleteElementCart({ id: null })) && navigate("../purchase", { replace: true })
+                        :
+                        navigate("../registration", { replace: true })
+                  }}
+               />
             </div>
             :
             <h1>В корзине нет товаров</h1>}

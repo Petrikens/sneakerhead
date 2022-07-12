@@ -13,6 +13,7 @@
    display: flex;
 }
 .cartImg{
+   width: 300px;
    margin-right: 20px;
 }
 .cartText{
@@ -20,11 +21,13 @@
    flex-direction: column;
    justify-content: space-evenly;
    margin-right: 50px;
+   width: 300px;
 }
 .cartButtons{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   width: 145px;
 }
 .cartButtons input{
    width: 145px;
@@ -36,6 +39,11 @@
 .buyButton{
    background-color: green;
    border-radius: 20px;
+   width: 745px;
+   height: 55px;
+   text-align: center;
+   margin-bottom: 10px;
+   cursor: pointer;
 }
 .deleteButton{
    background-color: red;
@@ -83,6 +91,9 @@ h1{
    }
    .cartButtons input:first-child{
       margin-right: 10px;
+   }
+   .buyButton{
+      width:245px;
    }
    
  }

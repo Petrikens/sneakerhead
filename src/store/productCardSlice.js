@@ -16,8 +16,14 @@ const productCardSlice = createSlice({
          state.cartCount = state.cartCount + 1
       },
       deleteElementCart(state, action) {
-         state.productData = state.productData.filter(el => el.id !== action.payload.id);
-         state.cartCount = state.cartCount - 1;
+         if (action.payload.id) {
+            state.productData = state.productData.filter(el => el.id !== action.payload.id);
+            state.cartCount = state.cartCount - 1;
+         } else {
+            state.productData = [];
+            state.cartCount = 0;
+         }
+
       }
 
    }

@@ -1,9 +1,10 @@
 import React, { useCallback } from "react";
 import RangeSlider from '../RangeSlider';
+import RadioButtonsGroup from '../RadioButtonsGroup';
 import CONSTANTS from '../constants.js';
 import './Filters.css';
 import { useDispatch } from 'react-redux';
-import { brandFilter, dataFilters, sizeFilter } from '../../store/dataFiltersSlice'
+import { dataFilters, sizeFilter, rebootSort } from '../../store/dataFiltersSlice'
 
 
 
@@ -15,23 +16,19 @@ const Filters = () => {
       const { innerHTML } = target;
       if (target.className !== 'active') {
          target.className = 'active';
-         dispatch(sizeFilter({ innerHTML, isActive: 'active' }))
+         dispatch(sizeFilter({ innerHTML, isActive: 'active' }));
       } else {
          target.className = 'normal';
          dispatch(sizeFilter({ innerHTML, isActive: 'normal' }))
       }
    }, [dispatch])
 
-
-   function brandClick({ target }) {
-      const { id } = target;
-      if (target.checked) {
-         dispatch(brandFilter({ id }))
-      }
-   }
-
    function searchButton() {
       dispatch(dataFilters({ condition: true }))
+   }
+
+   function isChecked() {
+      dispatch(rebootSort({ condition: true }))
    }
 
 
@@ -40,19 +37,9 @@ const Filters = () => {
          <div className="filter_brand filter_inner">
             <div className="filter_title">
                <p>Бренд</p>
-               <i className="fas fa-chevron-up" id="up"></i>
-               <i className="fas fa-chevron-down" id="down"></i>
             </div>
             <div id="wrapper">
-               {Object.entries(CONSTANTS.BRANDS).map(el => {
-                  const elementData = el[1];
-                  return (
-                     <label key={elementData.value}>
-                        <input type="radio" name='brand' id={elementData.value} onChange={brandClick} />
-                        {elementData.text}
-                        <br />
-                     </label>)
-               })}
+               <RadioButtonsGroup />
             </div>
          </div>
          <div className="filter_price filter_inner">
@@ -73,6 +60,7 @@ const Filters = () => {
                </ul>
             </div>
          </div>
+         <input type='button' value='Сбросить' className="searchButton" onClick={isChecked} />
          <input type='button' value='Поиск' className="searchButton" onClick={searchButton} />
       </div >
 

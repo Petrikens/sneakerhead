@@ -51,7 +51,6 @@
  .catalog .container .filter  .filter_brand label span,
  .catalog .container .filter  .filter_brand label span,
  .catalog .container .filter  .filter_brand label span {
-   margin-left: 8px;
    font-size: 18px;
    line-height: 21px;
    color: #0e0f0f;
@@ -137,6 +136,10 @@
     border: 1px solid #898989;
     border-radius: 2px;
     cursor: pointer;
+ }
+
+ .searchButton:first-of-type{
+    margin-bottom: 10px;
  }
  .active{
    background-color: #898989;

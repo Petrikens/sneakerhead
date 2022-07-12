@@ -29,8 +29,18 @@ const dataFiltersSlice = createSlice({
       size: CONSTANTS.SIZES,
       status: null,
       error: null,
+      isReboot: false,
    },
    reducers: {
+      rebootSort(state, action) {
+         state.isReboot = action.payload.condition;
+         if (state.isReboot) {
+            state.data = state.copyData;
+            state.size = CONSTANTS.SIZES;
+            state.brand = '';
+            state.price = [0, 20000];
+         }
+      },
       sortChange(state, action) {
          const { value } = action.payload.target;
          const sortData = [...state.data];
@@ -52,7 +62,7 @@ const dataFiltersSlice = createSlice({
          }
       },
       brandFilter(state, action) {
-         state.brand = action.payload.id;
+         state.brand = action.payload.value;
       },
       sizeFilter(state, action) {
          if (action.payload.isActive === 'active') {
@@ -63,6 +73,9 @@ const dataFiltersSlice = createSlice({
             const newSizeArr = [];
             newSizeArr.pop(action.payload.innerHTML);
             state.size = newSizeArr;
+         };
+         if (state.isReboot) {
+            action.payload.isActive = 'normal'
          }
       },
       priceFilter(state, action) {
@@ -97,6 +110,7 @@ const dataFiltersSlice = createSlice({
                   (el.sizes.some(size => state.size.includes(size))));
             }
             action.payload.condition = false;
+            state.isReboot = false;
          }
          return
       }
@@ -119,5 +133,5 @@ const dataFiltersSlice = createSlice({
 
 });
 
-export const { sortChange, dataFilters, brandFilter, sizeFilter, priceFilter } = dataFiltersSlice.actions;
+export const { sortChange, dataFilters, brandFilter, sizeFilter, priceFilter, rebootSort } = dataFiltersSlice.actions;
 export default dataFiltersSlice.reducer;

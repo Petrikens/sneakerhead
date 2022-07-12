@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../store/userLoginSlice';
-import './LoginPage.css';
+import '../RegistrationPage/RegistrationPage.css';
 
 export default function LoginPage() {
 
@@ -90,7 +90,7 @@ export default function LoginPage() {
                {errors?.Password && <p>{errors?.Password?.message || "Error!"}</p>}
             </div>
             <input type="submit" disabled={!isValid} value="Войти" />
-            <p className="singUp">Нет зарегистрированного аккаунта? <Link to="/registration" className="registration-text">Зарегистрироваться</Link></p>
+            <p className="singIn">Нет зарегистрированного аккаунта? <Link to="/registration" className="login-text">Зарегистрироваться</Link></p>
          </form>
       </div>
    );
