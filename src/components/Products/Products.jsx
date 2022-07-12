@@ -5,13 +5,9 @@ import Filters from "../Filters";
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../../store/dataFiltersSlice';
 import { Link } from 'react-router-dom'
+import './Products.css';
 
-import './MainPage.css';
-
-const MainPage = () => {
-
-
-   const data = useSelector(state => state.dataFilters.data);
+const Products = ({ dataProp }) => {
 
    const { status, error } = useSelector(state => state.dataFilters);
 
@@ -36,7 +32,7 @@ const MainPage = () => {
                {status === 'loading' && <h2>Loading...</h2>}
                {error && <h2>ERROR:{'Ошибка связи!'}</h2>}
                <div className="products">
-                  {data.map((product) => {
+                  {dataProp.map((product) => {
                      return (
                         <Link key={product.id} to={`/${product.id}`}>
                            <ProductCard data={product} />
@@ -52,4 +48,4 @@ const MainPage = () => {
    )
 }
 
-export default React.memo(MainPage);
+export default React.memo(Products);

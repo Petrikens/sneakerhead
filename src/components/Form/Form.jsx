@@ -1,16 +1,10 @@
 import React from "react";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { setUser } from '../../store/userLoginSlice';
-import './RegistrationPage.css';
+import { Link } from 'react-router-dom';
+import './Form.css';
 
-export default function RegistrationPage() {
+export default function Form({ submit, title }) {
 
-   const dispatch = useDispatch();
-
-   const navigate = useNavigate();
 
    const {
       register,
@@ -18,34 +12,15 @@ export default function RegistrationPage() {
          errors,
          isValid,
       },
-      reset,
       handleSubmit } = useForm({
          mode: "onBlur"
       });
 
-   const onSubmit = (data) => {
-      const auth = getAuth();
-      createUserWithEmailAndPassword(auth, data.Email, data.Password)
-         .then((userCredential) => {
-            const user = userCredential.user;
-            dispatch(setUser({
-               email: user.email,
-               id: user.uid,
-               token: user.accessToken
-            }));
-            navigate("../client", { replace: true });
-            reset();
-         })
-         .catch((error) => {
-            const errorMessage = error.message;
-            alert(errorMessage)
-         });
-   };
 
    return (
       <div className="auth-container">
-         <h1>Регистрация</h1>
-         <form onSubmit={handleSubmit(onSubmit)}>
+         <h1>{title}</h1>
+         <form onSubmit={handleSubmit(submit)}>
             <label>
                Электронная почта:
                <input
@@ -85,8 +60,14 @@ export default function RegistrationPage() {
             <div>
                {errors?.Password && <p>{errors?.Password?.message || "Error!"}</p>}
             </div>
-            <input type="submit" disabled={!isValid} value="Зарегистрироваться" />
-            <p className="singIn">У вас уже есть аккаунт? <Link to="/login" className="login-text">Войти</Link></p>
+            <input type="submit" disabled={!isValid} value={title} />
+            {
+               (title === 'Регистрация')
+                  ?
+                  <p className="singIn">У вас уже есть аккаунт? <Link to="/login" className="login-text">Войти</Link></p>
+                  :
+                  <p className="singIn">Нет зарегистрированного аккаунта? <Link to="/registration" className="login-text">Зарегистрироваться</Link></p>
+            }
          </form>
       </div>
    );

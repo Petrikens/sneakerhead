@@ -1,17 +1,17 @@
 import "./App.css";
 import { Routes, Route } from 'react-router-dom'
-import MainPage from './components/MainPage';
-import NewPage from './components/NewPage';
-import SalePage from './components/SalePage';
-import ForMenPage from './components/ForMenPage';
-import ForWomenPage from './components/ForWomenPage';
-import ShoppingCart from './components/ShoppingCart';
+import MainPage from './pages/MainPage';
+import NewPage from './pages/NewPage';
+import SalePage from './pages/SalePage';
+import ForMenPage from './pages/ForMenPage';
+import ForWomenPage from './pages/ForWomenPage';
+import ShoppingCart from './pages/ShoppingCart';
 import Layout from './components/Layout';
-import ProductCardPage from "./components/ProductCardPage";
-import RegistrationPage from './components/RegistrationPage';
-import LoginPage from './components/LoginPage';
-import ClientPage from './components/ClientPage';
-import PurchasePage from './components/PurchasePage';
+import ProductCardPage from "./pages/ProductCardPage";
+import RegistrationPage from './pages/RegistrationPage';
+import LoginPage from './pages/LoginPage';
+import ClientPage from './pages/ClientPage';
+import PurchasePage from './pages/PurchasePage';
 
 
 function App() {
