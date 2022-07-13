@@ -7,7 +7,7 @@ import './ProductCardPage.css'
 
 export default function ProductCardPage() {
 
-   const { id } = useParams();
+   const { name } = useParams();
    const [productData, setProductData] = useState();
    const [count, setCount] = useState(1);
    const [chosenSize, setChosenSize] = useState(null);
@@ -18,17 +18,17 @@ export default function ProductCardPage() {
    const navigate = useNavigate();
 
    useEffect(() => {
-      fetch(`https://my-json-server.typicode.com/Petrikens/json-server/data/${id}`)
+      fetch(`https://my-json-server.typicode.com/Petrikens/json-server/data?name=${name}`)
          .then(response => response.json())
          .then(json => {
-            setProductData(json);
+            setProductData(json.pop());
          })
          .catch((error) => {
             const errorMessage = error.message;
             navigate("../", { replace: true });
             alert(errorMessage)
          });
-   }, [id, navigate])
+   }, [name, navigate])
 
 
 

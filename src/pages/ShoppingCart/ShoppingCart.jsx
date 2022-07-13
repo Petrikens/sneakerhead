@@ -2,12 +2,10 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { deleteElementCart } from '../../store/productCardSlice';
-import useAuth from '../../hooks/use-auth'
 import './ShoppingCart.css'
 
 export default function ShoppingCart() {
 
-   const { isAuth } = useAuth();
 
    const navigate = useNavigate();
 
@@ -42,11 +40,7 @@ export default function ShoppingCart() {
                })}
                <input type="button" className='buyButton' name='buyButton' defaultValue='Оформить заказ'
                   onClick={() => {
-                     (isAuth)
-                        ?
-                        dispatch(deleteElementCart({ id: null })) && navigate("../purchase", { replace: true })
-                        :
-                        navigate("../registration", { replace: true })
+                     dispatch(deleteElementCart({ id: null })) && navigate("../purchase", { replace: true })
                   }}
                />
             </div>

@@ -6,12 +6,14 @@ import SalePage from './pages/SalePage';
 import ForMenPage from './pages/ForMenPage';
 import ForWomenPage from './pages/ForWomenPage';
 import ShoppingCart from './pages/ShoppingCart';
-import Layout from './components/Layout';
 import ProductCardPage from "./pages/ProductCardPage";
 import RegistrationPage from './pages/RegistrationPage';
 import LoginPage from './pages/LoginPage';
 import ClientPage from './pages/ClientPage';
 import PurchasePage from './pages/PurchasePage';
+
+import Layout from './components/Layout';
+import RequireAuth from './hoc/RequireAuth'
 
 
 function App() {
@@ -20,15 +22,25 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
-          <Route path='/:id' element={<ProductCardPage />} />
           <Route path='new' element={<NewPage />} />
+          <Route path='new/:name' element={<ProductCardPage />} />
           <Route path='sale' element={<SalePage />} />
-          <Route path='men' element={<ForMenPage />} />
-          <Route path='women' element={<ForWomenPage />} />
-          <Route path='cart' element={<ShoppingCart />} />
+          <Route path='sale/:name' element={<ProductCardPage />} />
+          <Route path='male' element={<ForMenPage />} />
+          <Route path='male/:name' element={<ProductCardPage />} />
+          <Route path='female' element={<ForWomenPage />} />
+          <Route path='female/:name' element={<ProductCardPage />} />
+          <Route path='cart' element={
+            <RequireAuth>
+              <ShoppingCart />
+            </RequireAuth>} />
           <Route path='registration' element={<RegistrationPage />} />
           <Route path='login' element={<LoginPage />} />
-          <Route path="client" element={<ClientPage />} />
+          <Route path="client" element={
+            <RequireAuth>
+              <ClientPage />
+            </RequireAuth>
+          } />
           <Route path="purchase" element={<PurchasePage />} />
         </Route>
       </Routes>

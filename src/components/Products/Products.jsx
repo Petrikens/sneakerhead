@@ -8,9 +8,8 @@ import { Link } from 'react-router-dom'
 import './Products.css';
 
 const Products = ({ dataProp }) => {
-
    const { status, error } = useSelector(state => state.dataFilters);
-
+   const searchName = useSelector(state => state.dataFilters.brandQuery);
    const dispatch = useDispatch();
 
    useEffect(() => {
@@ -32,9 +31,9 @@ const Products = ({ dataProp }) => {
                {status === 'loading' && <h2>Loading...</h2>}
                {error && <h2>ERROR:{'Ошибка связи!'}</h2>}
                <div className="products">
-                  {dataProp.map((product) => {
+                  {dataProp.filter(el => el.name.includes(searchName)).map((product) => {
                      return (
-                        <Link key={product.id} to={`/${product.id}`}>
+                        <Link key={product.id} to={(product.condition) ? `/${product.condition}/${product.name}` : `/${product.gender}/${product.name}`}>
                            <ProductCard data={product} />
                         </Link>
 

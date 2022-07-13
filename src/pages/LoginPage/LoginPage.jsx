@@ -1,16 +1,18 @@
 import React from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../store/userLoginSlice';
 import Form from '../../components/Form';
 
 export default function Loginpage() {
 
-   const dispatch = useDispatch();
-
    const navigate = useNavigate();
+   const location = useLocation();
+   const fromPage = location.state?.from?.pathname || '/'
+
+   const dispatch = useDispatch();
 
    const { reset } = useForm();
 
@@ -24,7 +26,7 @@ export default function Loginpage() {
                id: user.uid,
                token: user.accessToken
             }));
-            navigate("../client", { replace: true });
+            navigate(fromPage, { replace: true });
             reset();
          })
          .catch((error) => {
@@ -34,7 +36,4 @@ export default function Loginpage() {
    };
 
    return <Form submit={onSubmit} title='Войти' />
-}
-
-
-{/* <p className="singIn">Нет зарегистрированного аккаунта? <Link to="/registration" className="login-text">Зарегистрироваться</Link></p> */ }
+};

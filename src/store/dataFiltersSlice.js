@@ -30,8 +30,12 @@ const dataFiltersSlice = createSlice({
       status: null,
       error: null,
       isReboot: false,
+      brandQuery: null,
    },
    reducers: {
+      getNameQuery(state, action) {
+         state.brandQuery = action.payload.name;
+      },
       rebootSort(state, action) {
          state.isReboot = action.payload.condition;
          if (state.isReboot) {
@@ -133,5 +137,5 @@ const dataFiltersSlice = createSlice({
 
 });
 
-export const { sortChange, dataFilters, brandFilter, sizeFilter, priceFilter, rebootSort } = dataFiltersSlice.actions;
+export const { sortChange, dataFilters, brandFilter, sizeFilter, priceFilter, rebootSort, getNameQuery } = dataFiltersSlice.actions;
 export default dataFiltersSlice.reducer;
