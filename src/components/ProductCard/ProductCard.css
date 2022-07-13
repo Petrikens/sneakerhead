@@ -9,7 +9,7 @@
 .product li {
    width: 315px;
    height: 446px;
-   margin-bottom: 20px;
+   margin: 0px 0px 20px 13px;
    cursor: pointer;
 }
 
