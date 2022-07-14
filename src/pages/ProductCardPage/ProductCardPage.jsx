@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductData, increaseProductCart } from '../../store/productCardSlice';
+import BasicBreadcrumbs from "../../components/BasicBreadcrumbs";
 import './ProductCardPage.css'
 
 export default function ProductCardPage() {
@@ -68,6 +69,9 @@ export default function ProductCardPage() {
       (productData &&
          (
             <div className='productCardContainer'>
+               <div className='breadcrumbs'>
+                  <BasicBreadcrumbs />
+               </div>
                <div className='singleCart'>
                   <div className='productImg'>
                      <img alt='shoesImg' src={productData?.url} />
